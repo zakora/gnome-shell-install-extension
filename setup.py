@@ -1,6 +1,6 @@
 from setuptools import setup
 
-with open('README.md') as f:
+with open('README.adoc') as f:
     long_description = f.read()
 
 setup(
@@ -17,6 +17,7 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Desktop Environment :: Gnome',
     ],
