@@ -1,5 +1,11 @@
 = CHANGELOG
 
+== 1.0.2
+
+Misc:
+
+* use a `src/package/` directory structure
+
 == 1.0.1
 
 Bug fixes:
