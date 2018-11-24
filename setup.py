@@ -23,8 +23,9 @@ setup(
         'Topic :: Desktop Environment :: Gnome',
     ],
     python_requires='~=3.5',
-    py_modules=['main'],
+    package_dir={'': 'src'},
+    packages=['gnome_shell_install_extension'],
     entry_points={
-        'console_scripts': ['gnome-shell-install-extension=main:main']
+        'console_scripts': ['gnome-shell-install-extension=gnome_shell_install_extension:main']
     },
 )
