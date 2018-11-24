@@ -1,0 +1,12 @@
+= CHANGELOG
+
+== 1.0.1
+
+Bug fixes:
+
+* fix installing extension when in a different directory
+* fix extension UUID not being properly detected
+
+Misc:
+
+* mark support for Python 3.7 in `setup.cfg`

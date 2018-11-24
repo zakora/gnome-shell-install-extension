@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from json import loads
 from pathlib import Path
 from sys import argv
 from zipfile import ZipFile
@@ -21,6 +22,9 @@ def main():
         # Unzip extensions to the user Gnome Shell extension folder
         user_dir = Path.home() / '.local' / 'share' / 'gnome-shell' / 'extensions'
         for filename in filenames:
-            extension_uuid = '.'.join(filename.split('.')[:-3])
             with ZipFile(filename) as zip_file:
+                # Get the extension UUID from the metadata file inside the zip
+                with zip_file.open("metadata.json") as metadata:
+                    json_data = loads(metadata.read())
+                    extension_uuid = json_data["uuid"]
                 zip_file.extractall(path=user_dir / extension_uuid)

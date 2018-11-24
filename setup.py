@@ -5,7 +5,7 @@ with open('README.adoc') as f:
 
 setup(
     name='gnome-shell-install-extension',
-    version='1.0.0',
+    version='1.0.1',
     description="Install Gnome Shell extension from zip files.",
     long_description=long_description,
     url='https://github.com/zakora/gnome-shell-install-extension',
@@ -19,6 +19,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Desktop Environment :: Gnome',
     ],
     python_requires='~=3.5',
